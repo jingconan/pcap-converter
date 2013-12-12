@@ -1,0 +1,33 @@
+Description
+====================
+This tool provides two functionality:
+    - convert binary pcap file to text files [pcap-to-txt.py]
+    - convert pcap file to netflows [pcap-to-flow.py]
+
+Dependency
+=====================
+tshark
+
+http://www.wireshark.org/docs/man-pages/tshark.html
+
+You can install tshark easily in ubuntu
+
+sudo apt-get install tshark
+
+
+Usage
+=====================
+
+    $ ./pcap-to-flow.py -p ./tests/dosattack.pcap -t 0.01
+    $ ./pcap-to-txt.py -i ./tests/dosattack.pcap
+
+Type the following commands for more help
+    
+    $ ./pcap-to-flow.py -h
+    $ ./pcap-to-txt.py -h
+    
+
+Authors
+====================
+    Jing Conan Wang
+    wangjing AT bu.edu
