@@ -4,6 +4,17 @@ This tool provides two functionality:
     - convert binary pcap file to text files [pcap-to-txt.py]
     - convert pcap file to netflows [pcap-to-flow.py]
 
+txt format
+-------------------
+1   0.000000 51.142.253.91 -> 15.236.229.88 TCP 54 2555 22746
+<seq no> <time stamp> <src ip> -> <dst ip> <protocol> <pkt size> <src port> <dst port>
+
+flow format
+--------------------
+0.000429 238.227.214.84 147.47.105.20 TCP 54 0.014504
+<start time stamp> <src ip> <dst ip> <protocol> <flow size> <flow duration>
+
+
 Dependency
 =====================
 tshark
