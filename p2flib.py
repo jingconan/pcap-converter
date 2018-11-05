@@ -52,7 +52,7 @@ def change_to_flows(records, name, time_out):
             open_flows[five_tuple] = (t, t, length)
 
     print("""
-Totoal Packets: [%i]
+Total Packets: [%i]
 Exported Flows: [%i]
 Open Flows: [%i]
             """%(len(records), len(res_flow), len(open_flows)))
